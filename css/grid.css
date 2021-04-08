@@ -1,0 +1,32 @@
+.grid{
+    display: grid;
+    /* grid-template-columns: 200px 200px 400px;
+    grid-template-rows: auto auto;
+    gap: 2em;
+    row-gap: 2em; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    grid-template-rows: minmax(20px, auto);
+   
+}
+
+.nested-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+}
+.nested-grid>div{
+    border: 1px solid #000;
+    background-color: yellow;
+    padding: 1em;
+}
+.grid > div{
+    background-color: gray;
+    padding: 1em;
+}
+
+.grid > div:hover{
+    border: 3px solid red;
+    background: pink;
+}

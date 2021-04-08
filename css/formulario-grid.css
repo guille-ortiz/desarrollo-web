@@ -1,0 +1,83 @@
+.grid{
+    display: grid;
+    padding: 3%;
+    /* grid-template-columns: 200px 200px 400px;
+    grid-template-rows: auto auto;
+    gap: 2em;
+    row-gap: 2em; */
+
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-rows: minmax(20px, auto);
+   
+}
+.child1 div, .child2 div{
+    /* border: 1px solid; */
+    display: inline
+}
+.child1, .child2{
+    display: grid;
+    padding: 0%;
+    /* grid-template-columns: 200px 200px 400px;
+    grid-template-rows: auto auto;
+    gap: 2em;
+    row-gap: 2em; */
+
+    grid-template-columns: 1fr;
+    gap: 1em;
+    /* grid-template-rows: minmax(20px, 20px); */
+    /* grid-template-rows: 20px; */
+    grid-template-rows: repeat(7, 1fr);
+   
+}
+
+.center{
+    text-align: center;
+}
+
+.child1{
+    text-align:right;
+}
+
+.child2{
+    text-align: left;
+}
+
+
+.fondo{
+    background-color: #A9D7D1;
+    color: black;
+}
+
+.fondogris{
+    background-color: #FAFAFA;
+}
+
+.margen{
+    margin: 0px 39px 0px 51px;
+    padding: 27px 0px 0px 0px;
+}
+
+.inline{
+    display: inline;
+
+}
+
+.ancho100{
+    width: 100%;
+}
+
+.margenC1{
+    margin: 0px 30px 0px 51px;
+    padding: 5px 0px 0px 0px;
+}
+
+
+td{
+    padding: 12px 10px 12px 10px;
+}
+
+.fondox{
+    background-color: black;
+    color: white;
+}

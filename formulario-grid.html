@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulario-grid.css">
+</head>
+
+<body class="center">
+    <div class="margenC1 fondo center">
+        <h1 class="center" id="titulo" onmouseover="cambiaFondo()" onmouseout="cambiaFondoOriginal()">Survey Form</h1>
+
+        <div class="fondogris margen">
+            <strong>Let us know how we can improve freeCodeCamp</strong>
+
+            <div class="grid">
+                <div class="child1">
+                    <div>*Name</div>
+                    <div>*Email</div>
+                    <div>*Age</div>
+                    <div>Which otpion best describes</div>
+                    <div>How likely is that you would</div>
+                    <div>What do you like most in FCC</div>
+                    <div>Things that should be improved</div>
+                </div>
+                <div  class="child2">
+                    <div><input type="text" placeholder="Enter your name"></div>
+
+                    <div><input type="text" placeholder="Enter your Email"></div>
+
+                    <div><input type="number" name="" id="" placeholder="Age"></div>
+
+                    <div><select name="" id="">
+                            <option value="">
+                                Student
+                            </option>
+                            <option value="">
+                                Teacher
+                            </option>
+                        </select></div>
+
+
+                    <div><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Definitely</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Maybe</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Not sure</label>
+                    </div>
+
+
+                    <div><select name="" id="">
+                            <option value="">
+                                Select an otpion
+                            </option>
+                        </select></div>
+
+                    <div><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Front end</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Back end</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Data</label>
+                        <input type="text" name="cajita" id="cajita" value="perros">
+                        <input type="button" value="presioname" onclick="cambiaTitulo()">
+                        <input type="button" value="cambiaTitutlo" onclick="cambiaTituloV1()">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function cambiaTitulo(){
+            document.getElementsByTagName("h1")[0].innerHTML="-flores"  
+        } 
+        function cambiaTituloV1(){
+            var text=document.getElementById("cajita").value
+            document.getElementsByTagName("h1")[0].innerHTML=text  
+        } 
+        function cambiaFondo(){
+            var text=document.getElementById("titulo").className="fondox"
+        } 
+        function cambiaFondoOriginal(){
+            var titulo=document.getElementById("titulo")
+            titulo.classList.remove("fondox")
+        } 
+    </script>
+</body>
+
+</html>

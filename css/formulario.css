@@ -1,0 +1,47 @@
+.center{
+    text-align: center !important;
+}
+
+.right{
+    text-align:right;
+}
+
+.fondo{
+    background-color: #A9D7D1;
+    color: black;
+}
+
+.fondogris{
+    background-color: #FAFAFA;
+}
+
+.margen{
+    margin: 0px 39px 0px 51px;
+    padding: 27px 0px 0px 0px;
+}
+
+.inline{
+    display: inline;
+
+}
+
+.ancho100{
+    width: 100%;
+}
+
+.margenC1{
+    margin: 0px 30px 0px 51px;
+    padding: 5px 0px 0px 0px;
+}
+
+td:first-child{
+    text-align: right;
+}
+
+td:last-child{
+    text-align: left;
+}
+
+td{
+    padding: 12px 10px 12px 10px;
+}

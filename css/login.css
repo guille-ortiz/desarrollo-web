@@ -1,0 +1,48 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 50%;
+    height:50%;
+    margin-top: 5%;
+  background-color: rgb(74, 199, 199);
+  border-radius:0.5em;
+  box-sizing: content-box;
+
+}
+
+form{
+    padding: 1em 1em 1em 1em;
+    display:grid;    
+    grid-auto-rows: 30px;
+    row-gap: 1em;
+
+}
+
+input{
+    border-radius: 0.5em;
+
+}
+
+button{
+    border-radius: 0.5em;
+    background-color: blue;
+    color: white;
+
+}
+
+.cajita{
+    background-color: gray;
+    width: 3em;
+    height: 3em
+}

@@ -1,0 +1,43 @@
+.chikita{
+    width: 3%;
+    height: 3%;
+    /* display: inline-block; */
+}
+
+.grande{
+width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+nav li a{
+    /* display: block;  */
+    padding: 15px 20px;
+    text-decoration: none;
+    color: gray;
+
+}
+nav li a:hover{
+    color: black;
+    background-color: aquamarine;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+}
